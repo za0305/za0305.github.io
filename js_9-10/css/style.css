@@ -1,0 +1,221 @@
+@import url(selectric.css);
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	background-image: url(../img/fon.jpg);
+	background-size: cover;
+	font-family: sans-serif;, arial;
+}
+
+              /*HEADER*/
+
+.wrapper {
+	width: 900px;
+	height: 1500px;
+	margin: 0 auto 50px;
+	background-color: #ddd;
+	box-shadow: 0 0 10px white;
+}
+.banner {
+	width: 900px;
+	height: 250px;
+	position: relative;
+	background-image: url(../img/banner.jpg);
+}
+#robot {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.menu {
+	height: 40px;
+	padding-left: 200px;
+	margin: 0 0 50px 0;
+	background-color: black;
+	border-radius: 0 0 0 30px;
+
+}
+.menu_item {
+	width: 140px;
+	height: 34px;
+	margin-top: 2px;
+	position: relative;
+	display: inline-block;
+	color: gray;
+	vertical-align: top;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	background-color: black;
+}
+.menu_item a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}
+.menu_item a:hover {
+	color: black;
+	border-radius: 10px;
+}
+.submenu {
+	width: 130px;
+	position: absolute;
+	z-index: 100;
+	left: 5px;
+	display: none;
+	background-color: #2F4F4F;
+}
+.submenu a:hover {
+	border-radius: 0;
+}
+.subsubmenu {
+	width: 160px;
+	position: absolute;
+	left: 130px;
+	top: 67px;
+	display: none;
+	background-color: #2F4F4F;
+}
+
+
+        /*CARUSEL*/
+
+.carousel_wrapper {
+	width: 860px;
+	height: 560px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px black;
+}
+.jcarousel {
+	width: 800px;
+	height: 500px;
+	margin: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+.jcarousel-prev {
+	position: absolute;
+	top: 250px;
+	left: 4px;
+}
+.jcarousel-next {
+	position: absolute;
+	top: 250px;
+	right: 4px;
+}
+
+
+            /*QUESTIONS*/
+
+.question_wrapper {
+	width: 700px;
+	height: 450px;
+	margin: 50px auto;
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+}
+
+.questions {
+	width: 640px;
+	height: 390px;
+	margin: 20px;
+	padding: 10px;
+	background-color: #eee;
+	border: 1px solid black;
+	border-radius: 10px;
+	line-height: 25px;
+	text-align: center;
+}
+.left_block {
+	width: 230px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.right_block {
+	width: 380px;
+	margin-left: 10px;
+	padding-left: 10px;
+	display: inline-block;
+	border-left: 2px solid #ccc;
+	text-align: left;
+}
+.questions h2 {
+	text-align: center;
+	margin: 5px;
+}
+.questions p {
+	margin: 10px;
+}
+
+			/*CHECKBOX JQUERY*/
+
+.new_check {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	cursor: pointer;
+	background-image: url(../img/check.png);
+}
+.new_check input {
+	display: none;
+}
+input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	margin: 30px;
+	border-radius: 5px;
+}
+
+    		/*CHECKBOX CSS*/
+
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label {
+	cursor: pointer;
+}
+label:before {
+	content: " ";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/check.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+input[type=checkbox]:checked + label:before {
+background-position: 0 -20px;
+}
+label:hover:after {
+background-position: 0 -40px;
+}
+input[type=checkbox]:checked + label:hover:before {
+background-position: 0 -60px;
+}

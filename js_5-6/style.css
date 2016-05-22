@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.timerWrapp {
+	width: 305px;
+	margin: 200px auto;
+	padding: 5px; 
+	border: 2px solid #2e6da4;
+	border-radius: 5px;
+	background-color: gray;
+	font-family: Courier;
+
+}
+#stopwatch {
+	width: 290px;
+	height: 50px;
+	margin-bottom: 5px;
+	border: 2px solid #2e6da4;
+	border-radius: 5px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+	background-color: white;
+}
+.btn {
+	width: 140px;
+}

@@ -1,0 +1,31 @@
+
+.carousel {
+    width: 890px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 100000px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 30px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 200px;
+}
+
+.carousel-element p {
+	text-align: center;
+}
+
+.carousel_arrow_right, .carousel_arrow_left {
+	position: absolute;
+	z-index: 100;
+}

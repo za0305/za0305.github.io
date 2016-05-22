@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/script.main.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	                            <!-- HEADER -->
+		<div class="banner">
+			<img id="robot" src="img/robot.png" alt="robot">
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="menu_item"><a href="#">NEWS</a></li>
+				<li class="menu_item" id="menuLinks"><a href="#">FILMS &#8659;</a>
+					<ul class="submenu">
+						<li class="submenu_item"><a href="#">NEW FILMS</a></li>
+						<li class="submenu_item"><a href="#">OLD FILMS</a></li>
+						<li class="submenu_item" id="submenuLinks"><a href="#">POPULAR FILMS &#8658;</a>
+							<ul class="subsubmenu">
+								<li class="subsubmenu_item"><a href="#">BY RATING</a></li>
+								<li class="subsubmenu_item"><a href="#">FOR VOTING ON THE SITE</a></li>
+								<li class="subsubmenu_item"><a href="#">FOR AWARDS</a></li>
+							</ul>
+						</li>
+						<li class="submenu_item"><a href="#">MOVIE PREVIEW</a></li>
+					</ul>
+				</li>
+				<li class="menu_item"><a href="#">GAMES</a></li>
+				<li class="menu_item"><a href="#">EVENTS</a></li>
+			</ul>
+		</div>
+
+								<!-- CARUSEL -->
+		<div class="carousel_wrapper">
+			<div class="jcarousel">
+				<ul>
+					<li><img src="img/slide1.jpg" alt=":)"></li>
+					<li><img src="img/slide2.jpg" alt=":)"></li>
+					<li><img src="img/slide3.jpg" alt=":)"></li>
+					<li><img src="img/slide4.jpg" alt=":)"></li>
+					<li><img src="img/slide5.jpg" alt=":)"></li>
+				</ul>
+			</div>
+			<a class="jcarousel-prev" href="#"><img src="img/l.png" alt="prew"></a>
+    		<a class="jcarousel-next" href="#"><img src="img/r.png" alt="Next"></a>
+		</div>				
+							<!-- QUESTIONS -->
+
+		<div class="question_wrapper">
+			<div class="questions">
+			<p><h2>Please answer a few questions:</h2></p>
+			<div class="left_block">
+				<span>Choose your country</span>
+				<select name="country_id" id="country_id" tabindex="1">
+						<option value="">-- Select country --</option>
+					<optgroup label="North America">
+						<option value="1">USA</option>
+						<option value="9">Canada</option>
+					</optgroup>
+					<optgroup label="Europe">
+						<option value="2">France</option>
+						<option value="3">Spain</option>
+						<option value="6">Bulgaria</option>
+						<option value="7">Greece</option>
+						<option value="8">Italy</option>
+					</optgroup>
+					<optgroup label="Asia">
+						<option value="5">Japan</option>
+						<option value="11">China</option>
+					</optgroup>
+						<option value="4">Brazil</option>
+						<option value="10">South Africa</option>
+				</select>
+			  <p>You would choose the dark side?</p>
+			  <input type="checkbox" name="yes" id="check_yes" value="off">
+			  <label for="check_yes"> Probably yes</label><br>
+			  <input type="checkbox" name="not" id="check_not" value="off">
+			  <label for="check_not"> Of course not</label><br>
+			  <input type="checkbox" name="possibly" id="check_possibly"value="off">
+			  <label for="check_possibly"> I don't know</label><br>
+			</div>
+			<div class="right_block">
+				<p>Which of the Star Wars movies do you think is the best?</p>	
+				<span class="new_check"><input type="checkbox" name="film1" value="off"></span> EPISODE I THE PHANTOM MENACE<br>
+				<span class="new_check"><input type="checkbox" name="film2" value="off"></span> EPISODE II ATTACK OF THE CLONES<br>
+				<span class="new_check"><input type="checkbox" name="film3" value="off"></span> EPISODE III REVENGE OF THE SITH<br>
+				<span class="new_check"><input type="checkbox" name="film4" value="off"></span> EPISODE IV A NEW HOPE<br>
+				<span class="new_check"><input type="checkbox" name="film5" value="off"></span> EPISODE V THE EMPIRE STRIKES BACK<br>
+				<span class="new_check"><input type="checkbox" name="film6" value="off"></span> EPISODE VI RETURN OF THE JEDI<br>
+				<span class="new_check"><input type="checkbox" name="film7" value="off"></span> EPISODE VII THE FORCE 	AWAKENS<br>
+				</div>
+				<input type="submit" value="SUBMIT">
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS_11-12</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+												<!-- Carousel -->
+
+	<div class="carousel_block">
+	  <div class="wrapper_carousel">
+			<p class="carousel_arrow_left"><img src="img/L_arrow.png" alt="left"></p>
+		  <div class="carousel">
+					<ul class="carousel-list">
+						<li class="carousel-element"><img src="img/travel1.jpg" alt="photo">
+								<p>Country 1</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel2.jpg" alt="photo">
+								<p>Country 2</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel3.jpg" alt="photo">
+								<p>Country 3</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel4.jpg" alt="photo">
+								<p>Country 4</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel5.jpg" alt="photo">
+								<p>Country 5</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel6.jpg" alt="photo">
+								<p>Country 6</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel7.jpg" alt="photo">
+								<p>Country 7</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel8.jpg" alt="photo">
+								<p>Country 8</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel9.jpg" alt="photo">
+								<p>Country 9</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel10.jpg" alt="photo">
+								<p>Country 10</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel11.jpg" alt="photo">
+								<p>Country 11</p>
+						</li>
+						<li class="carousel-element"><img src="img/travel12.jpg" alt="photo">
+								<p>Country 12</p>
+						</li>
+					</ul>
+				</div>
+				<p class="carousel_arrow_right"><img src="img/r_arrow.png" alt="rigth"></p>	
+			</div>
+		</div>
+		
+								<!-- Template -->
+
+		<p class="button_show">Показать ДЗ-12</p>
+		<div id="results"></div>
+
+		<script type="text/tmpl" id="item_tmpl">
+			<% for ( var i = 0; i < members.length; i++ ) { %>
+			<h2><%= members[i].name %></h2>
+
+			<img src="<%= members[i].photo %>" alt="photo">
+			<p><%= members[i].profession %></p>
+			<hr>
+			<p><%= members[i].reason %></p>
+			<br>
+			<ul>
+				<li><%= members[i].cause1 %></li>
+				<li><%= members[i].cause2 %></li>
+				<li><%= members[i].cause3 %></li>
+			</ul>
+			<hr>
+			<p><%= members[i].contact %></p>
+			<p><%= members[i].phone %></p>
+			<br>
+			<p><%= members[i].vk %></p>
+			<p><a href="<%= members[i].link %>"><%= members[i].link %></a></p>
+			<hr>
+			<p><%= members[i].action %></p>
+			<p><%= members[i].feedback %></p>
+			<% }; %>
+		</script>
+</body>
+</html>
