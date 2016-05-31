@@ -21,7 +21,7 @@ require(
 	'jquery'
 	],
 	function (Model, Controller, View, $) {
-		var firstToDoList = ['learn js', 'read book', 'morning running', 'eat yogurt'];
+		var firstToDoList = ['buy bread', 'buy milk', 'buy butter', 'make dinner'];
 
 		var model = new Model(firstToDoList);
 
