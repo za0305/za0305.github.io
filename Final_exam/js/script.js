@@ -58,59 +58,83 @@ $(function () {
 
 
 
-
+							// IDEAS
 $(function () {
 
 		var apiKey = '2708023-0848a307d4df840432333e492';
 		var htmlTemp; 
 		var mytmpl;
+		
+								// rendering on the loaded page
 
-		$.ajax ({
-	            url: 'https://pixabay.com/api/?key='+apiKey+'&q= &per_page=7&image_type=photo',
-	            success: function(data, textStatus) {
-	   
-	            htmlTemp = $('#list-template').html();
-				mytmpl = tmpl(htmlTemp, {data:data});
-					
-					$('.grid').append(mytmpl);
-					
+	
+		$.ajax({                    /* send request*/
+		    url: 'https://pixabay.com/api/?key='+apiKey+'&q= &per_page=7&image_type=photo',
+		    success: function(data, textStatus) {
+		   
+			    htmlTemp = $('#list-template').html();  /*get template*/
+				mytmpl = tmpl(htmlTemp, {data:data});   /*processing template*/
+						
+				$('.grid').append(mytmpl);      /*insert into HTML*/
+				
+				if (document.all && !document.addEventListener){    /*check IE8 or older*/
+					console.log('yours browser IE8 or older');
 
-	            	isotopeInit();
+				} else {
+			        isotopeInit();   /*call plagin*/
+			    };
+			},
+		    dataType: "jsonp",
+		    error: function(textStatus){      /*processing error*/
+		        $('.grid').html('<p class="ideas_warning">Sorry server does not provide the information, '+ textStatus+'</p>');
+		        $('.ideas').css('height', '500px');
+			}
 
-	            }
-	        });
+	    });
+		
+	    
 
-		$('.ideas_submit').on('click', function () {
+	    				// rendering on submit
 
-			var searchValue = $('.ideas_search').val();
+	    $('.ideas_submit').on('click', function () {
+	    	
+
+			var query = $('.ideas_search').val();    /*get search properties*/
 			
-			$.ajax ({
-	            url: 'https://pixabay.com/api/?key='+apiKey+'&q='+searchValue+'&per_page=7&image_type=photo',
-	            success: function(data, textStatus) {
-	            	
-	            	if (data.hits.length == 0) {
-	            		$('.grid').html('<p class="ideas_warning">I\'m sorry, but I have not found what you need</p>');
-	            		$('.ideas').css({
-	            			height: '500px',
-	            		});
-	            	} else {
-	   
-	            htmlTemp = $('#list-template').html();
-				mytmpl = tmpl(htmlTemp, {data:data});
-					
-					
-					$('.grid').html(mytmpl);
-					$('.ideas').css({
-	            			height: '1385px',
-	            		});
+			$.ajax({						 /* send request*/
+			    url: 'https://pixabay.com/api/?key='+apiKey+'&q='+query+'&per_page=7&image_type=photo',
+			    success: function(data, textStatus) {
+				   	if (data.hits.length == 0) {			/*if match not found*/
 
+		            	$('.grid').html('<p class="ideas_warning">I\'m sorry, but I have not found what you need</p>');
+		            	$('.ideas').css('height', '500px');
 
-	            	isotopeInit();
-					}
-	            }
-	        });
+		            } else {
+		   	
+			            htmlTemp = $('#list-template').html();  /*get template*/
+						mytmpl = tmpl(htmlTemp, {data:data});	/*processing template*/
 
-				return false;
+						$('.grid').html(mytmpl);				 /*insert into HTML*/
+						$('.ideas').css('height', '1385px');	
+
+						if (document.all && !document.addEventListener){    /*check IE8 or older*/
+							console.log('yours browser IE8 or older');
+						} else {
+			        		isotopeInit();   /*call plagin*/
+			    		};
+			        };
+			    },
+			    dataType: "jsonp",
+			    error: function(textStatus){				 /*processing server error*/
+			        $('.grid').html('<p class="ideas_warning">Sorry server does not provide the information, '+ textStatus+'</p>');
+			        $('.ideas').css('height', '500px');
+				}
+
+		    });
+			
+		    
+
+			return false;
 		});
 
 
@@ -126,7 +150,7 @@ function isotopeInit() {
 	gutter: 5,
 	percentPosition: true,
    	masonry: {
-  	columnWidth: 50
+  	columnWidth: 10
 	}
 });
 }

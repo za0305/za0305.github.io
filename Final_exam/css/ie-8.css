@@ -1,213 +1,236 @@
 header, footer {
 	display: block;
 }
-.wrapper .header .header_logo{
+.wrapper .header {
+    height: 686px; 
+}
+.wrapper .header .header_container {
+    width: 960px; 
+} 
+.wrapper .header .header_container .header_logo{
 	width: 200px;
 	display: inline;
 	position: absolute;
-	top: 50px;
-	left: 26px;
+	top: 34px;
+	left: 0;
 	font-size: 21px;
 	zoom: 1;
 }
-.wrapper .header .header_menu {
+.wrapper .header .header_container .header_menu {
 	position: absolute;
 	display: inline;
-	top: 33px;
-	right: 38px;
+	top: 18px;
+	right: 4px;
 	zoom: 1;
 } 
+.wrapper .header .header_slogan {
+    margin-top: 198px; 
+}
 .wrapper .header .header_slogan h1 {
-	font-size: 50px;
-	line-height: 64px; 
+	width: 540px;
+    margin: 8px auto;
+    font-size: 52px;
+    line-height: 64px;
 } 
 .wrapper .header .header_slogan p {
-	font: 100 26px "Roboto"; 
+	width: 100%;
+    margin-top: 22px;
+    font: 100 26px "Roboto"; 
 } 
+.wrapper .header .header_slogan .header_button {
+    width: 225px;
+    margin-top: 34px; 
+}
 .wrapper .steps {
-        padding-top: 100px;
-        text-align: center;
-        height: 520px; 
+    padding-top: 98px;
+    text-align: center;
+    height: 520px; 
 } 
 .wrapper .steps h3 {
-      margin-bottom: 30px; 
-      font-family: "Montserrat";
-      font-size: 22px;
-      font-weight: bold;
-      text-align: center; 
+    margin-bottom: 30px; 
 }
 .wrapper .steps .steps-1 {
-          display: inline;
-          width: 258px;
-          height: 188px;
-          margin: 6px;
-          padding: 213px 20px 0px;
-          text-align: left;
-          zoom: 1;
-          background-image: url(../img/step-1_desktop.png); 
+    display: inline;
+    width: 258px;
+    height: 188px;
+    margin: 6px;
+    padding: 213px 20px 0px;
+    text-align: left;
+    zoom: 1;
+    background-image: url(../img/step-1_desktop.png); 
 } 
 .wrapper .steps .steps-1 .steps-1_nav_left {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/lefl_arrow_tablet.png);
-            left: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    background-image: url(../img/lefl_arrow_tablet.png);
+    left: 15px;
+    top: 155px; 
 } 
 .wrapper .steps .steps-1 .steps-1_nav_right {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/right_arrow_tablet.png);
-            right: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    background-image: url(../img/right_arrow_tablet.png);
+    right: 15px;
+    top: 155px; 
 }
 .wrapper .steps .steps-2 {
-          width: 258px;
-          height: 188px;
-          margin: 6px;
-          padding: 213px 20px 0px;
-          display: inline;
-          text-align: left;
-          zoom: 1;
-          background-image: url(../img/step-2_desktop.png); 
+    width: 258px;
+    height: 188px;
+    margin: 6px 10px;
+    padding: 213px 20px 0px;
+    display: inline;
+    text-align: left;
+    zoom: 1;
+    background-image: url(../img/step-2_desktop.png); 
 } 
 .wrapper .steps .steps-2 .steps-2_nav_left {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/lefl_arrow_tablet.png);
-            left: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    background-image: url(../img/lefl_arrow_tablet.png);
+    left: 15px;
+    top: 155px; 
 } 
 .wrapper .steps .steps-2 .steps-2_nav_right {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/right_arrow_tablet.png);
-            right: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    background-image: url(../img/right_arrow_tablet.png);
+    right: 15px;
+    top: 155px; 
 }
 .wrapper .steps .steps-3 {
-          width: 258px;
-          height: 188px;
-          margin: 6px;
-          padding: 213px 20px 0px;
-          display: inline;
-          text-align: left;
-          zoom: 1;
-          background-image: url(../img/step-3_desktop.png); 
+    width: 258px;
+    height: 188px;
+    margin: 6px;
+    padding: 213px 20px 0px;
+    display: inline;
+    text-align: left;
+    zoom: 1;
+    background-image: url(../img/step-3_desktop.png); 
 } 
 .wrapper .steps .steps-3 .steps-3_nav_left {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/lefl_arrow_tablet.png);
-            left: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    background-image: url(../img/lefl_arrow_tablet.png);
+    left: 15px;
+    top: 155px; 
 } 
 .wrapper .steps .steps-3 .steps-3_nav_right {
-            width: 30px;
-            height: 55px;
-            position: absolute;
-            background-image: url(../img/right_arrow_tablet.png);
-            right: 10px;
-            top: 35px; 
+    width: 30px;
+    height: 55px;
+    background-image: url(../img/right_arrow_tablet.png);
+    right: 15px;
+    top: 155px; 
+}
+.wrapper .partners {
+    width: 960px;
+    margin: 32px auto 0; 
 }
 .wrapper .partners h2 {
-          width: 100%; 
+    width: 100%; 
 }
 .wrapper .partners .partners_block {
-          display: inline;
-          width: 220px;
-          margin: 30px 5px 0 5px; 
-          vertical-align: top; 
-          zoom: 1;
+    display: inline;
+    width: 220px;
+    margin: 30px 5px 0 5px; 
+    vertical-align: top; 
+    zoom: 1;
 } 
 .wrapper .partners .partners_search_button {
-          width: 190px;
-          margin: 30px auto 60px; 
+    width: 188px;
+    margin: 30px auto 60px; 
 } 
 .wrapper .ideas {
-        height: 1393px; 
+    height: 1396px; 
 }
 .wrapper .ideas h2 {
-          margin-bottom: 34px; 
+    width: 100%;
+    margin-bottom: 30px; 
 } 
 .wrapper .ideas .grid {
-          width: 950px; 
+    width: 950px; 
 } 
 .wrapper .ideas .grid .grid-item {
-        display: inline;
-        zoom: 1;
+    display: inline;
+    zoom: 1;
+    margin: 10px;
 }
 .wrapper .ideas .grid .grid-item img {
-              width: 300px;
-              height: 300px; 
+    width: 290px;
+    height: 310px; 
 }
 .wrapper .ideas .grid .grid-item:nth-child(5) img {
-            width: 600px; 
+    width: 600px; 
 }
 .wrapper .ideas .grid .grid-item:nth-child(6) img {
-            width: 600px; 
+    width: 600px; 
 }
 .wrapper .ideas .ideas_holiday {
-          width: 450px;
-          height: 275px;
-          margin-left: -230px;
-          bottom: 17px; 
+    width: 450px;
+    height: 275px;
+    padding-left: 6px;
+    margin-left: -230px;
+    bottom: 17px; 
 } 
 .wrapper .ideas .ideas_holiday h3 {
-            margin: 35px 0 33px; 
+    margin: 35px 0 33px; 
 } 
+.wrapper .ideas .ideas_holiday span {
+    font-size: 1.1em; 
+}
 .wrapper .ideas .ideas_holiday input {
-            width: 237px;
-            margin: 38px 0 10px 180px;
-            display: inline; 
-            zoom: 1;
+    width: 237px;
+    margin: 38px auto 10px;
+    display: inline; 
+    zoom: 1;
 }
 .wrapper .ideas .ideas_holiday button {
-            width: 162px;
-            margin-top: 28px; 
+    width: 162px;
+    margin-top: 28px; 
 } 
 .wrapper .footer {
-        padding-top: 36px; 
-        text-align: left;
+    padding-top: 37px; 
+    height: 215px;
 }
-.wrapper .footer h3 {
-          margin-left: 30px;
-          float: left; 
+.wrapper .footer .footer_container {
+    width: 960px; 
 }
-.wrapper .footer .footer_wrapper {
-        width: 250px;
-        margin-left: 25%; 
-} 
-.wrapper .footer .footer_wrapper .footer_company {
-        width: 120px;
-        display: inline;
-        text-align: left; 
-        zoom: 1;
-} 
-.wrapper .footer .footer_wrapper .footer_company .footer_company_menu .footer_menu_item {
-          display: block; 
+.wrapper .footer .footer_container h3 {
+    margin-left: 10px;
+    float: left; 
 }
-.wrapper .footer .footer_wrapper h4 {
-          margin-top: 0;
-          margin-bottom: 13px; 
+.wrapper .footer .footer_container .footer_wrapper {
+    width: 250px;
+    margin-left: 234px; 
 } 
-.wrapper .footer .footer_wrapper .footer_partners {
-        width: 120px;
-        display: inline;
-        zoom: 1;
-        vertical-align: top; 
+.wrapper .footer .footer_container .footer_wrapper .footer_company {
+    width: 120px;
+    display: inline;
+    text-align: left; 
+    zoom: 1;
 } 
-.wrapper .footer .footer_logo {
-          width: 115px;
-          height: 44px;
-          margin-top: -120px;
-          float: right;
-          margin-right: 30px;
-          background-image: url(../img/designed_logo_tablet.png); 
+.wrapper .footer .footer_container .footer_wrapper .footer_company .footer_company_menu .footer_menu_item {
+    display: block;
+    line-height: 20px;
+}
+.wrapper .footer .footer_container .footer_wrapper h4 {
+    margin-top: 0;
+    margin-bottom: 13px;
+    padding-left: 6px; 
+}
+.wrapper .footer .footer_container .footer_wrapper .footer_partners {
+    width: 85px;
+    padding-left: 24px;
+    display: inline-block;
+    vertical-align: top; 
+}
+.wrapper .footer .footer_container .footer_logo {
+    width: 115px;
+    height: 44px;
+    margin-top: -121px;
+    float: right;
+    margin-right: 6px;
+    background-image: url(../img/designed_logo_tablet.png); 
 }
 
 
